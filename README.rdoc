@@ -1,3 +1,7 @@
 = redmine_cumulo_chart
 
 Description goes here
+
+## Credits
+
+[Plotly.js](https://github.com/plotly/plotly.js) : https://github.com/plotly/plotly.js, MIT License
