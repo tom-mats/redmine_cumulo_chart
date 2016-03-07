@@ -4,7 +4,7 @@ module IncDecRecord
     end
     def controller_issues_edit_after_save(context={})
       c_journal = context[:issue].journals.select{|elem| elem.id == context[:journal].id}
-      p c_journal.visible_details
+      p c_journal[0].details
     end
   end
 end
