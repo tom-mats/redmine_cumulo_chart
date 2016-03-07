@@ -1,3 +1,4 @@
+require 'inc_dec_record'
 Redmine::Plugin.register :redmine_cumulo_chart do
   name 'Redmine Cumulo Chart plugin'
   author 'Author name'
