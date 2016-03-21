@@ -3,6 +3,7 @@ class CreateDailyVariations < ActiveRecord::Migration
     create_table :daily_variations do |t|
       t.date :date
       t.integer :project
+      t.integer :status
       t.integer :priority
       t.integer :count
     end

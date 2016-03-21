@@ -1,6 +1,6 @@
-class CreateTotalVariations < ActiveRecord::Migration
+class CreateSummaries < ActiveRecord::Migration
   def change
-    create_table :total_variations do |t|
+    create_table :summaries do |t|
       t.date :date
       t.integer :project
       t.integer :status
