@@ -11,6 +11,7 @@ class ShowChart < Redmine::Hook::ViewListener
     var data = [trace1];
     Ploty.new('chart', data);
     </script>
+    EOS
     html += '<div class="chart" style="width:90% height:260px"></div>'
     return tags.join(' ') + html
   end
