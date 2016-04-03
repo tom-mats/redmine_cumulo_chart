@@ -11,7 +11,7 @@ class ShowChart < Redmine::Hook::ViewListener
       type: 'scatter'
     };
     var data = [trace1];
-    Ploty.new('redmine_projects_chart', data);
+    Plotly.newPlot('redmine_projects_chart', data);
     </script>
     EOS
     return tags.join(' ') + html + js
