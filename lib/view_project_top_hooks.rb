@@ -2,7 +2,7 @@ class ShowChart < Redmine::Hook::ViewListener
   def view_projects_show_left(context={})
     tags = []
     tags << javascript_include_tag('plotly.js', :plugin => 'redmine_cumulo_chart', :media => 'all')
-    html = <<"EOS"
+    html = <<-EOS
     <script type="text/javascript">
     var trace1 = {
       x : [1, 2, 3, 4, 5] ,
