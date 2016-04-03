@@ -1,4 +1,5 @@
 require 'inc_dec_record'
+require  'view_project_top_hooks'
 Redmine::Plugin.register :redmine_cumulo_chart do
   name 'Redmine Cumulo Chart plugin'
   author 'Author name'

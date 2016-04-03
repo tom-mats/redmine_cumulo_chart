@@ -2,6 +2,8 @@ require 'date'
 
 module IncDecRecord
   class Hooks < Redmine::Hook::Listener
+    def controller_issues_move_before_save(context={})
+    end
     def controller_issues_new_after_save(context={})
     end
     def controller_issues_edit_after_save(context={})
