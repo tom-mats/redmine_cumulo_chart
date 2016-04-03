@@ -1,8 +1,9 @@
 class ShowChart < Redmine::Hook::ViewListener
   def view_projects_show_left(context={})
+    tags = []
+    tags << javascript_include_tag('plotly.js', :plugin => 'redmine_cumulo_chart', :media = 'all')
     html = ""
-    html += "<%= javascript_include_tag 'plotly', :plugin => 'redmine_cumulo_chart', :media = 'all' %>"
     html += "<p>view_project_show_left</p>"
-    return html
+    return tags.join(' ') + html
   end
 end
