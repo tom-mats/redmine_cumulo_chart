@@ -5,8 +5,9 @@ class ShowChart < Redmine::Hook::ViewListener
     html = <<"EOS"
     <script type="text/javascript">
     var trace1 = {
-      x : [1, 2, 3, 4, 5]
-      y : [3, 5, 8, 9, 10]
+      x : [1, 2, 3, 4, 5] ,
+      y : [3, 5, 8, 9, 10] ,
+      type: 'scatter'
     };
     var data = [trace1];
     Ploty.new('chart', data);
